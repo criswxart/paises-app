@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "paises-app"
+  "defaultProject": "paises-app",
+  "cli": {
+    "analytics": false
+  }
 }

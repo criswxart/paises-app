@@ -11,7 +11,7 @@
 <hr>
 
 <div *ngIf="hayError" class="alert alert-danger"> 
-    No sé encontró nada con el término 
+    No sé encontró nada con el término: {{termino}}
 
 </div>
 
@@ -30,8 +30,8 @@
             <tbody>
                 <tr *ngFor="let pais of paises; let i = index;">
                     <td>{{ i+1 }}</td>
-                    <td> <img class="small-tag" [src]="pais.flag"> </td>
-                    <td>{{ pais.name }}</td>
+                    <td> <img class="small-tag" [src]="pais.flags.png"> </td> 
+                    <td>{{ pais.name.common }}</td>
                     <td>123123</td>
                     <td>
                         <a href="/pais/cris">ver..</a>

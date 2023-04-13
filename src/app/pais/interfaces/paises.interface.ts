@@ -29,7 +29,7 @@ export interface Country {
     car:          Car;
     timezones:    string[];
     continents:   string[];
-    flags:        CoatOfArms;
+    flags:        Flags;
     coatOfArms:   CoatOfArms;
     startOfWeek:  string;
     capitalInfo:  CapitalInfo;
@@ -51,10 +51,10 @@ export interface CoatOfArms {
 }
 
 export interface Currencies {
-    EUR: Eur;
+    CLP: Clp;
 }
 
-export interface Eur {
+export interface Clp {
     name:   string;
     symbol: string;
 }
@@ -69,8 +69,14 @@ export interface Eng {
     m: string;
 }
 
+export interface Flags {
+    png: string;
+    svg: string;
+    alt: string;
+}
+
 export interface Gini {
-    "2018": number;
+    "2017": number;
 }
 
 export interface Idd {
